@@ -6,6 +6,7 @@ export const mealsSlice = createSlice({
     { name: 'High Tea', cost: 25, selected: false },
     { name: 'Lunch', cost: 65, selected: false },
     { name: 'Dinner', cost: 70, selected: false },
+
   ],
   reducers: {
     toggleMealSelection: (state, action) => {
@@ -13,5 +14,6 @@ export const mealsSlice = createSlice({
     },
   },
 });
+
 export const { toggleMealSelection } = mealsSlice.actions;
 export default mealsSlice.reducer;
